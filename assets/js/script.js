@@ -52,7 +52,7 @@ $(document).ready(() => {
   }
 
   $(".place-name").parent().parent().css("box-shadow", "none");
-  $($(".place-name").parent().find("img")).css("border-radius", "8px");
+  // $($(".place-name").parent().find("img")).css("border-radius", "8px");
 
   //   var controller = new ScrollMagic.Controller();
 
