@@ -52,6 +52,12 @@ $(document).ready(() => {
   }
 
   $(".place-name").parent().parent().css("box-shadow", "none");
+  $("img[data-count]").each(function(){
+    console.log($(this).data('count'))
+    $(this).css('transform',`scale(calc(1.${$(this).data('count')} - 0.5))`)
+
+  }) 
+
   // $($(".place-name").parent().find("img")).css("border-radius", "8px");
 
   //   var controller = new ScrollMagic.Controller();
