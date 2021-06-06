@@ -15,7 +15,7 @@ $(document).ready(() => {
       console.log(an[i]);
       $("#myimg").attr("src", an[i]);
       i++;
-    }, 300);
+    }, 200);
   })();
 
   (() => {
@@ -80,7 +80,7 @@ $(document).ready(() => {
   $(".place-name").parent().parent().css("box-shadow", "none");
   $("img[data-count]").each(function () {
     console.log($(this).data("count"));
-    $(this).css("transform", `scale(calc(1.${$(this).data("count")} - 0.5))`);
+    $(this).css("transform", `scale(calc(0.${$(this).data("count")} * 1.5 ))`);
   });
   // View an image.
   for (let i = 0; i < 30; i++) {

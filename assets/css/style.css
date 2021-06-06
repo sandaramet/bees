@@ -49,6 +49,9 @@ section > div { height: 100%; }
 .flex p { width: 100%; }
 #s17 img { width: 60px; height: 60px; }
 #s26 img, #s19 img {/* max-width: 60px !important; */}
+#s39 .caption{
+  font-size: 0.6em;
+}
 #s39>div { display: grid; grid-template-columns: 0.75fr 0.35fr; column-gap: 3vw; }
 #s39 > div:last-child { display: grid; grid-template-rows: min-content min-content; align-content: space-between; }
 .flex img { min-width: 60px; }
@@ -86,10 +89,16 @@ h4 { margin-bottom: 20px; font-size: 1.7em; }
 #s50{
   padding-bottom: 0px !important;
 }
+#s19 img, #s26 img {
+  width: 71%;
+  /* float: right; */
+  margin: auto;
+  display: block;
+}
 .place-name-for-cover-image{
   bottom: 50px;
 }
-
+#s19 img{}
 @media only screen and (max-width: 600px) {
   iframe { width: 100% !important; }
   p {font-size: 5vw;width: 100%;}
