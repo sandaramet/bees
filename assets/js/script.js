@@ -1,11 +1,5 @@
 $(document).ready(() => {
-  $("section").attr("data-av-animation", "slideInRight");
-  var options = {
-    animateThreshold: 400,
-    scrollPollInterval: 20,
-  };
-  $("section").AniView(options);
-
+  
   animateInScroll();
   animateInScroll(
     [

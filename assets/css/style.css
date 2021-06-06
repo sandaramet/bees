@@ -97,7 +97,9 @@ section > div {
   cursor: pointer;
 }
 #s6 img {
+  /* margin: 99%; */
   /* transition: 0.3s; */
+  min-width: 100%;
 }
 #s6 > div > div > div:hover img {
   transform: scale(1.2);
@@ -235,4 +237,9 @@ display: grid;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 3vw;
+}
+@media only screen and (max-width: 600px) {
+  iframe{
+    width: 100% !important;
+  }
 }
