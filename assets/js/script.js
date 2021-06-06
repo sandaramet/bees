@@ -79,7 +79,6 @@ $(document).ready(() => {
   $(".graphic img").parent().addClass("viewer")
   $(".place-name").parent().parent().css("box-shadow", "none");
   $("img[data-count]").each(function () {
-    console.log($(this).data("count"));
     $(this).css("transform", `scale(calc(0.${$(this).data("count")} * 1.5 ))`);
   });
   // View an image.
