@@ -80,18 +80,20 @@ $(document).ready(() => {
     $(this).css("transform", `scale(calc(0.${$(this).data("count")} * 1.5 ))`);
   });
   // View an image.
+  console.log(window.parent);
+
   for (let i = 0; i < 10; i++) {
-    new Viewer(document.querySelectorAll(".viewer")[i], {
+   let viewer =  new Viewer(document.querySelectorAll(".viewer")[i], {
       // inline: true,
-      container:document.querySelectorAll(".viewer")[i],
       navbar:false,
       toolbar:false,
       title:false,
       viewed() {
         // viewer.zoomTo(1);
       },
+      moveTo(){
+        console.log("this")
+      }
     });
-
   }
-  // console.log(window.parent);
 });
