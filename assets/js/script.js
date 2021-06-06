@@ -87,6 +87,10 @@ $(document).ready(() => {
       navbar:false,
       toolbar:false,
       title:false,
+      viewed() {
+        const {top, left} = $(document.querySelectorAll(".viewer")[i]).offset()
+        viewer.move(0,-(top / 8));
+      },
     });
   }
   // console.log(window.parent);
