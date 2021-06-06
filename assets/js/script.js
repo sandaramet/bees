@@ -1,13 +1,22 @@
 $(document).ready(() => {
+  $("section").attr("data-av-animation", "slideInRight");
+  var options = {
+    animateThreshold: 400,
+    scrollPollInterval: 20,
+  };
+  $("section").AniView(options);
+
   animateInScroll();
-  animateInScroll( [
-	"./assets/img/SVG/flying bee/1.svg",
-	"./assets/img/SVG/flying bee/2.svg",
-	"./assets/img/SVG/flying bee/3.svg",
-	"./assets/img/SVG/flying bee/2.svg",
-	"./assets/img/SVG/flying bee/1.svg",
-  ],
-  className = ".flying-bee img");
+  animateInScroll(
+    [
+      "./assets/img/SVG/flying bee/1.svg",
+      "./assets/img/SVG/flying bee/2.svg",
+      "./assets/img/SVG/flying bee/3.svg",
+      "./assets/img/SVG/flying bee/2.svg",
+      "./assets/img/SVG/flying bee/1.svg",
+    ],
+    (className = ".flying-bee img")
+  );
   function animateInScroll(
     arr = [
       "./assets/img/SVG/spoon/phase-1.svg",
@@ -19,7 +28,7 @@ $(document).ready(() => {
       "./assets/img/SVG/spoon/phase-1.svg",
     ],
     className = "#myimg",
-	duration = 2000
+    duration = 2000
   ) {
     // define images
     var images = arr;
@@ -51,13 +60,12 @@ $(document).ready(() => {
   $(".place-name").parent().parent().css("box-shadow", "none");
   $($(".place-name").parent().find("img")).css("border-radius", "8px");
 
+  //   var controller = new ScrollMagic.Controller();
 
-//   var controller = new ScrollMagic.Controller();
-
-//   // build scene
-//   var scene = new ScrollMagic.Scene({triggerElement: "#trigger"})
-// 				  // trigger a velocity opaticy animation
-// 				  .setVelocity("section", {opacity: 1}, {duration: 400})
-// 				  .addIndicators() // add indicators (requires plugin)
-// 				  .addTo(controller);
+  //   // build scene
+  //   var scene = new ScrollMagic.Scene({triggerElement: "#trigger"})
+  // 				  // trigger a velocity opaticy animation
+  // 				  .setVelocity("section", {opacity: 1}, {duration: 400})
+  // 				  .addIndicators() // add indicators (requires plugin)
+  // 				  .addTo(controller);
 });

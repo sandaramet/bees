@@ -18,7 +18,7 @@ img {
 }
 #root {
   padding: 1vw 5vw;
-  width: 80vw;
+  width: 90vw;
   /* border: 1px solid black; */
   min-height: 200vh;
   margin: auto;
@@ -37,8 +37,7 @@ section {
   display: grid;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 0px 5px #00000070;
-  border-radius: 8px;
+  /* box-shadow: 0px 0px 5px #00000070; */
   /* opacity: 0; */
 }
 section > div {
@@ -98,7 +97,7 @@ section > div {
   cursor: pointer;
 }
 #s6 img {
-  transition: 0.3s;
+  /* transition: 0.3s; */
 }
 #s6 > div > div > div:hover img {
   transform: scale(1.2);
@@ -215,9 +214,7 @@ section > div {
   grid-template-columns: .75fr .35fr;
   grid-column-gap: 3vw;
 }
-#s39 img{
-  border-radius: 8px;
-}
+
 #s39>div:last-child{
 
 display: grid;
