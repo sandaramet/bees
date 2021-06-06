@@ -83,6 +83,7 @@ $(document).ready(() => {
   for (let i = 0; i < 10; i++) {
     new Viewer(document.querySelectorAll(".viewer")[i], {
       // inline: true,
+      container:document.querySelectorAll(".viewer")[i],
       navbar:false,
       toolbar:false,
       title:false,
