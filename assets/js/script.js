@@ -95,5 +95,5 @@ $(document).ready(() => {
     });
 
   }
- 
+  console.log(window.parent);
 });
