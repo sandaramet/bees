@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: system-ui;
+  text-align: center;
+}
+body {
+  overflow-x: hidden;
+}
+p {
+  text-align: center;
+  font-size: 1.3vw;
+}
+img {
+  max-width: 100%;
+  min-width: 60px;
+}
+#root {
+  padding: 1vw 5vw;
+  width: 80vw;
+  /* border: 1px solid black; */
+  min-height: 200vh;
+  margin: auto;
+  display: flex;
+  position: relative;
+  grid-template-columns: 1fr;
+  flex-wrap: wrap;
+}
+section {
+  max-width: 100%;
+  padding: 3vw 3vw;
+  width: 100%;
+  /* margin: 2vw 0px; */
+  margin: 1.5vw auto;
+  /* border: 1px solid black; */
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 5px #00000070;
+  border-radius: 8px;
+  /* opacity: 0; */
+}
+section > div {
+  height: 100%;
+}
+.heading {
+  min-height: 5vw;
+  margin-bottom: 0px;
+  margin-top: calc(3vw * 1.5);
+  font-weight: bold;
+  width: max-content !important;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding: 2vw 4vw;
+}
+#s1 {
+  width: 65%;
+  border: none;
+  display: block;
+  box-shadow: none;
+}
+#s1 > div > div:first-child {
+  min-height: 38vw;
+}
+.phase {
+  background-image: url("/assets/img/SVG/spoon/phase-1.svg");
+  width: 100%;
+  height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#s2 {
+  padding: 5vw 4vw;
+}
+#s3 {
+  width: 70%;
+}
+#s4 {
+  min-height: 15vw;
+  width: 60vw;
+}
+#s6 {
+  display: block;
+}
+#s6 p {
+  font-size: 1.2vw;
+  text-align: center;
+  margin-bottom: 1vw;
+}
+#s6 > div > div {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+#s6 > div > div > div {
+  width: 14%;
+  cursor: pointer;
+}
+#s6 img {
+  transition: 0.3s;
+}
+#s6 > div > div > div:hover img {
+  transform: scale(1.2);
+}
+#s7 {
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-column-gap: 3vw; */
+}
+#s7 p {
+  font-size: 0.9vw;
+}
+#s9 {
+  /* display: grid; */
+  /* grid-template-columns: 0.6fr 0.4fr; */
+  /* align-items: baseline; */
+}
+#s9 img {
+  /* width: 60px; */
+}
+#s10{
+  display: grid;
+  grid-template-columns: 0.6fr .34fr;
+}
+#s10 p {
+  font-size: 1vw;
+}
+#ss10 > div:last-child > div {
+  display: flex;
+  position: relative; /* width: 200px; */ /* height: 101%; */
+  height: 100%;
+}
+#s10 > div:last-child > div > div:first-child {
+  padding: 2vw;
+}
+#s10 > div:last-child > div > div {
+  position: absolute;
+  top: 0px;
+  padding: 0px !important;
+}
+#s10 > div:last-child > div {
+  position: relative;
+  height: 100%;
+}
+
+#s10 > div:last-child > div > div:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8%;
+}
+
+#s10 > div:last-child > div > div:nth-child(2) {
+  top: 61%;
+  transform: translateY(-50%);
+  left: 25%;
+}
+#s10 > div:last-child > div > div:nth-child(2) img {
+  width: 60px;
+}
+
+#s10 > div:last-child > div > div:nth-child(3) {
+  top: 48%;
+  transform: translateY(-50%);
+  left: 44%;
+}
+#s10 > div:last-child > div > div:nth-child(3) img {
+  width: 80px;
+}
+#s10 > div:last-child > div > div:nth-child(4) {
+  top: 62%;
+  transform: translateY(-50%);
+  left: 69%;
+}
+#s10 > div:last-child > div > div:nth-child(4) img {
+  width: 60px;
+}
+#s10 > div:last-child > div > div:nth-child(5) {
+  top: 36%;
+  transform: translateY(-50%);
+  left: 73%;
+}
+
+#s10 > div > div:first-child {
+  padding: 1vw 3vw;
+}
+#s14 p {
+  font-size: 1vw;
+}
+#s16 > div {
+  height: 400px;
+}
+#s16 > div > div:first-child {
+  position: relative;
+  height: 100%;
+}
+#s16 iframe {
+  position: absolute;
+  height: 100%;
+}
+.flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1vw;
+}
+#s17 img {
+  width: 60px;
+  height: 60px;
+}
+#s26 img,#s19 img{
+  max-width: 60px !important;
+}
+
+#s39{
+  display: grid;
+  grid-template-columns: .75fr .35fr;
+  grid-column-gap: 3vw;
+}
+#s39 img{
+  border-radius: 8px;
+}
+#s39>div:last-child{
+
+display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 1vw;
+}
+.flex img {
+  min-width: 60px;
+  /* max-width: 60px; */
+}
+.text-bold {
+  font-weight: bold;
+}
+.place-name p {
+  text-align: right;
+}
+#s31{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3vw;
+}
