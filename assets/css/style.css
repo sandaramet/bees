@@ -29,7 +29,7 @@ img {
 }
 section {
   max-width: 100%;
-  padding: 1vw 2vw;
+  padding: 3vw 2vw;
   width: 100%;
   /* margin: 2vw 0px; */
   margin: 0.5vw auto;
@@ -242,5 +242,23 @@ display: grid;
 @media only screen and (max-width: 600px) {
   iframe{
     width: 100% !important;
+  }
+  p{font-size: 5vw;}
+  #s39{
+    grid-template-columns: 1fr;
+  }
+  .flex,#s31,#s10{
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+  }
+  #s39>div:last-child{
+    grid-row-gap: 30px;
+
+  }
+  #s10{
+    grid-template-rows: 1fr 286px;
+  }
+  .place-name p{
+    font-size: 4vw;
   }
 }
