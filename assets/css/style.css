@@ -98,7 +98,7 @@ section > div {
 }
 #s6 img {
   /* margin: 99%; */
-  /* transition: 0.3s; */
+  transition: 0.3s;
   min-width: 100%;
 }
 #s6 > div > div > div:hover img {
