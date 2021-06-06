@@ -46,7 +46,7 @@ section > div {
 .heading {
   min-height: 5vw;
   margin-bottom: 0px;
-  margin-top: calc(3vw * 1.5);
+  /* margin-top: calc(3vw * 1.5); */
   font-weight: bold;
   width: max-content !important;
   padding-left: 4vw;
@@ -70,7 +70,7 @@ section > div {
   background-repeat: no-repeat;
 }
 #s2 {
-  padding: 5vw 4vw;
+  /* padding: 5vw 4vw; */
 }
 #s3 {
   width: 70%;
@@ -109,7 +109,7 @@ section > div {
   /* grid-column-gap: 3vw; */
 }
 #s7 p {
-  font-size: 0.9vw;
+  /* font-size: 0.9vw; */
 }
 #s9 {
   /* display: grid; */
@@ -124,7 +124,7 @@ section > div {
   grid-template-columns: 0.6fr .34fr;
 }
 #s10 p {
-  font-size: 1vw;
+  /* font-size: 1vw; */
 }
 #ss10 > div:last-child > div {
   display: flex;
@@ -188,7 +188,7 @@ section > div {
   font-size: 1vw;
 }
 #s16 > div {
-  height: 400px;
+  /* height: 400px; */
 }
 #s16 > div > div:first-child {
   position: relative;
@@ -202,6 +202,7 @@ section > div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 1vw;
+  /* height: max-content; */
 }
 #s17 img {
   width: 60px;
