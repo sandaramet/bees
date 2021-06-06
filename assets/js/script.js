@@ -89,6 +89,7 @@ $(document).ready(() => {
       title:false,
       viewed() {
         const {top, left} = $(document.querySelectorAll(".viewer")[i]).offset()
+        console.log(top)
         viewer.move(0,-(top / 8));
       },
     });
