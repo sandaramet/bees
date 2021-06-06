@@ -12,7 +12,6 @@ $(document).ready(() => {
     let i = 0;
     setInterval(() => {
       if (i > an.length) i = 0;
-      console.log(an[i]);
       $("#myimg").attr("src", an[i]);
       i++;
     }, 200);
@@ -29,7 +28,6 @@ $(document).ready(() => {
     let i = 0;
     setInterval(() => {
       if (i > an.length) i = 0;
-      console.log(an[i]);
       // $(".flying-bee img").attr("src", an[i]);
       i++;
     }, 100);
