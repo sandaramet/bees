@@ -29,10 +29,10 @@ img {
 }
 section {
   max-width: 100%;
-  padding: 3vw 3vw;
+  padding: 1vw 2vw;
   width: 100%;
   /* margin: 2vw 0px; */
-  margin: 1.5vw auto;
+  margin: 0.5vw auto;
   /* border: 1px solid black; */
   display: grid;
   align-items: center;
