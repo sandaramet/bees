@@ -87,6 +87,7 @@ $(document).ready(() => {
       navbar:false,
       toolbar:false,
       title:false,
+      movable:false,
       viewed() {
         const {top, left} = $(document.querySelectorAll(".viewer")[i]).offset()
         console.log(top)
