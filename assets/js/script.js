@@ -23,7 +23,7 @@ $(document).ready(() => {
     $(this).css("transform", `scale(calc(0.${$(this).data("count")} * 1.5 ))`);
   });
   // View an image.
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 30; i++) {
     let viewer = new Viewer(document.querySelectorAll(".viewer")[i], {
       // inline: true,
       navbar: false,
