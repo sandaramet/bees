@@ -90,7 +90,7 @@ $(document).ready(() => {
       movable:false,
       viewed() {
         const {top, left} = $(document.querySelectorAll(".viewer")[i]).offset()
-        viewer.moveTo(top)
+        viewer.moveTo(0)
         // $($(document.querySelectorAll(".viewer")[i]).find('.viewer-canvas img')).css('margin-top',`${top }px !important`)
         // $($(document.querySelectorAll(".viewer")[i]).find('.viewer-canvas img')).css('margin-top',`0px`)
       },
