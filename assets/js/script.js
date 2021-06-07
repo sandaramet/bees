@@ -12,7 +12,7 @@ $(document).ready(() => {
     let i = 0;
     setInterval(() => {
       if (i > an.length) i = 0;
-      // $("#myimg").attr("src", an[i]);
+      $("#myimg").attr("src", an[i]);
       i++;
     }, 200);
   })();
@@ -33,7 +33,6 @@ $(document).ready(() => {
     }, 100);
   })();
 
-  animateInScroll()
   function animateInScroll(
     arr = [
       "./assets/img/SVG/spoon/phase-1.svg",
@@ -83,17 +82,10 @@ $(document).ready(() => {
   for (let i = 0; i < 10; i++) {
    let viewer =  new Viewer(document.querySelectorAll(".viewer")[i], {
       // inline: true,
-      container:document.querySelectorAll(".viewer")[i],
       navbar:false,
       toolbar:false,
       title:false,
-      movable:false,
-      viewed() {
-        const {top, left} = $(document.querySelectorAll(".viewer")[i]).offset()
-        viewer.moveTo(0)
-        // $($(document.querySelectorAll(".viewer")[i]).find('.viewer-canvas img')).css('margin-top',`${top }px !important`)
-        // $($(document.querySelectorAll(".viewer")[i]).find('.viewer-canvas img')).css('margin-top',`0px`)
-      },
+   
     });
   }
   // console.log(window.parent);
