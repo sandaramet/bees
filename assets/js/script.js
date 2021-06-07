@@ -91,7 +91,8 @@ $(document).ready(() => {
       viewed() {
         const {top, left} = $(document.querySelectorAll(".viewer")[i]).offset()
         console.log(top)
-        $($(document.querySelectorAll(".viewer")[i]).find('.viewer-canvas img')).css('margin-top',`${top}px`)
+        viewer.move(0,top)
+        // $($(document.querySelectorAll(".viewer")[i]).find('.viewer-canvas img')).css('margin-top',`${top }px !important`)
         // $($(document.querySelectorAll(".viewer")[i]).find('.viewer-canvas img')).css('margin-top',`0px`)
       },
     });
