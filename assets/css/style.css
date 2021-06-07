@@ -61,7 +61,7 @@ section > div { height: 100%; }
 
 #s1 p { font-style: italic; text-align: center; }
 .full { padding: 0px; display: block; width: 100vw !important; position: relative !important; margin: 0px !important; }
-.full img {height: 100%;width: 100%;object-fit: cover;  height: 100vh; }
+.full img {height: 100%;width: 100%;object-fit: cover;/* height: 100vh; */}
 .full * { display: grid; }
 .place-name {right: 25px;bottom: 10px;color: white;position: absolute !important;}
 .border { border: 1px solid rgb(144, 144, 144); }
