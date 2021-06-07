@@ -1,33 +1,41 @@
 $(document).ready(() => {
   (() => {
-    const path = {
-      curviness: 1,
-      autoRotate: true,
-      values: [{ x: 650, y: 200 }],
-    };
+    $(window).on("scroll", function (e) {
+      if ($(window).scrollTop() > 3500 && $(window).scrollTop() < 4000) {
+        const path = {
+          curviness: 1,
+          autoRotate: true,
+          values: [{ x: 618, y: 69 }],
+        };
 
-    const t = new TimelineLite();
-    t.add(
-      TweenLite.to(".flying-bee", 1, {
-        bezier: path,
-        ease: Power1.easeInOut,
-      })
-    );
+        const t = new TimelineLite();
+        t.add(
+          TweenLite.to(".flying-bee-s12", 1, {
+            bezier: path,
+            ease: Power1.easeInOut,
+          })
+        );
+      }
+    });
   })();
   (() => {
-    const path = {
-      curviness: 1,
-      autoRotate: true,
-      values: [{ x: 618, y: 69 }],
-    };
+    $(window).on("scroll", function (e) {
+      if ($(window).scrollTop() > 4000 && $(window).scrollTop() < 4660) {
+        const path = {
+          curviness: 1,
+          autoRotate: true,
+          values: [{ x: 650, y: 200 }],
+        };
 
-    const t = new TimelineLite();
-    t.add(
-      TweenLite.to(".flying-bee-s12", 1, {
-        bezier: path,
-        ease: Power1.easeInOut,
-      })
-    );
+        const t = new TimelineLite();
+        t.add(
+          TweenLite.to(".flying-bee", 1, {
+            bezier: path,
+            ease: Power1.easeInOut,
+          })
+        );
+      }
+    });
   })();
   (() => {
     const an = [
