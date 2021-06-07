@@ -28,7 +28,8 @@ $(document).ready(() => {
         ease: Power1.easeInOut,
       })
     );
-  })()(() => {
+  })();
+  (() => {
     const an = [
       "./assets/img/SVG/spoon/phase-1.svg",
       "./assets/img/SVG/spoon/phase-2.svg",
