@@ -136,3 +136,17 @@ h4 { margin-bottom: 20px; font-size: 1.7em; }
 .viewer-backdrop{
   /* background-color:transparent !important ; */
 }
+.flying-bee{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 83px;
+  left: 128px;
+}
+.flying-bee-s12{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 83px;
+  left: 128px;
+}

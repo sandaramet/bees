@@ -1,5 +1,34 @@
 $(document).ready(() => {
   (() => {
+    const path = {
+      curviness: 1,
+      autoRotate: true,
+      values: [{ x: 650, y: 200 }],
+    };
+
+    const t = new TimelineLite();
+    t.add(
+      TweenLite.to(".flying-bee", 1, {
+        bezier: path,
+        ease: Power1.easeInOut,
+      })
+    );
+  })();
+  (() => {
+    const path = {
+      curviness: 1,
+      autoRotate: true,
+      values: [{ x: 618, y: 69 }],
+    };
+
+    const t = new TimelineLite();
+    t.add(
+      TweenLite.to(".flying-bee-s12", 1, {
+        bezier: path,
+        ease: Power1.easeInOut,
+      })
+    );
+  })()(() => {
     const an = [
       "./assets/img/SVG/spoon/phase-1.svg",
       "./assets/img/SVG/spoon/phase-2.svg",
@@ -23,7 +52,7 @@ $(document).ready(() => {
     $(this).css("transform", `scale(calc(0.${$(this).data("count")} * 1.5 ))`);
   });
   // View an image.
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < document.querySelectorAll(".viewer").length; i++) {
     let viewer = new Viewer(document.querySelectorAll(".viewer")[i], {
       // inline: true,
       navbar: false,
@@ -47,8 +76,10 @@ $(document).ready(() => {
   ];
 
   $("section:not(.full)").each(function () {
-
-    $(this).attr("data-aos", effect[Math.floor(Math.random() * effect.length + 1)]);
+    $(this).attr(
+      "data-aos",
+      effect[Math.floor(Math.random() * effect.length + 1)]
+    );
   });
   AOS.refresh();
 
