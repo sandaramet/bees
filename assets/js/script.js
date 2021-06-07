@@ -46,8 +46,7 @@ $(document).ready(() => {
     "flip-left",
   ];
 
-  $("section").each(function () {
-    console.log($(this));
+  $("section:not(.full)").each(function () {
 
     $(this).attr("data-aos", effect[Math.floor(Math.random() * effect.length + 1)]);
   });
