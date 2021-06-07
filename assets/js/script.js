@@ -12,7 +12,7 @@ $(document).ready(() => {
     let i = 0;
     setInterval(() => {
       if (i > an.length) i = 0;
-      $("#myimg").attr("src", an[i]);
+      // $("#myimg").attr("src", an[i]);
       i++;
     }, 200);
   })();
@@ -33,7 +33,7 @@ $(document).ready(() => {
     }, 100);
   })();
 
-
+  animateInScroll()
   function animateInScroll(
     arr = [
       "./assets/img/SVG/spoon/phase-1.svg",
