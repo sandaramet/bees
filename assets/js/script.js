@@ -90,7 +90,7 @@ $(document).ready(() => {
       viewed() {
         const {top, left} = $(document.querySelectorAll(".viewer")[i]).offset()
         console.log(top)
-        viewer.move(0,-(top / 8));
+        $($(document.querySelectorAll(".viewer")[i]).find('img')).css('margin-top',`${top}px`)
       },
     });
   }
